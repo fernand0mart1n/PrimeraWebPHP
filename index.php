@@ -6,5 +6,4 @@
 		<a href="listado.php?edad=35">Prueba mayores</a>
 		<br>
 		<a href="form.php">Ir al formulario</a>
-	</body>
-</html>
+<?php require __DIR__.'/vistas/footer.php'; ?>

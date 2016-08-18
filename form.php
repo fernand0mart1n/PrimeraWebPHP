@@ -1,7 +1,5 @@
 <?php
 	
-	$nombre = $_POST['nombre'];
-	$edad	= $_POST['edad'];
-	$lugar	= $_POST['lugar'];
+	$paises = ["Seleccione un país", "Argentina", "Perú", "Brasil"];
 	
 	require __DIR__.'/vistas/form_vista.php';

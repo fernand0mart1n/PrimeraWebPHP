@@ -1,5 +1,9 @@
 <?php
 
+	$nombre = $_POST['nombre'];
+	$edad = $_POST['edad'];
+	$lugar = $_POST['lugar'];
+
 	if(!is_string($nombre)) {
 		array_push($errores, "Debe ingresar un nombre.");
 	}
@@ -8,7 +12,7 @@
 		array_push($errores, "Debe ingresar su edad.");
 	}
 
-	if(!is_string($lugar)) {
+	if(!is_string($lugar) || $lugar == "Seleccione un país") {
 		array_push($errores, "Debe seleccionar un país.");
 	}
 

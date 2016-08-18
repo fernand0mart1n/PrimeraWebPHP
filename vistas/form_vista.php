@@ -26,10 +26,9 @@
 				<label for="lugar" class="col-xs-4 control-label">Lugar:</label>
 				<div class="col-xs-5">
 					<select class="form-control" id="lugar" name="lugar" required>
-						<option value="">Seleccione una opción</option>
-						<option value="Argentina">Argentina</option>
-						<option value="Peru">Peru</option>
-						<option value="Brasil">Brasil</option>
+						<?php foreach ($paises as $pais): ?>
+							<option value="<?php echo $pais ?>"><?php echo $pais ?></option>
+						<?php endforeach; ?>
 					</select>
 				</div>
 			</div>
