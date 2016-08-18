@@ -26,8 +26,8 @@
 				<label for="lugar" class="col-xs-4 control-label">Lugar:</label>
 				<div class="col-xs-5">
 					<select class="form-control" id="lugar" name="lugar" required>
-						<?php foreach ($paises as $pais): ?>
-							<option value="<?php echo $pais ?>"><?php echo $pais ?></option>
+						<?php foreach ($paises as $valor => $pais): ?>
+							<option value="<?php echo $valor ?>"><?php echo $pais ?></option>
 						<?php endforeach; ?>
 					</select>
 				</div>
