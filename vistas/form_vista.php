@@ -17,19 +17,19 @@
 			<div class="form-group">
 				<label for="nombre" class="col-xs-4 control-label">Nombre:</label>
 				<div class="col-xs-5">
-					<input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" autofocus="true" required>
+					<input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" autofocus="true" >
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="edad" class="col-xs-4 control-label">Edad:</label>
 				<div class="col-xs-5">
-					<input type="text" id="edad" name="edad" class="form-control" placeholder="Edad" required>
+					<input type="text" id="edad" name="edad" class="form-control" placeholder="Edad" >
 				</div>
 			</div>
 			<div class="form-group">
 				<label for="lugar" class="col-xs-4 control-label">Lugar:</label>
 				<div class="col-xs-5">
-					<select class="form-control" id="lugar" name="lugar" required>
+					<select class="form-control" id="lugar" name="lugar" >
 						<?php foreach ($paises as $valor => $pais): ?>
 							<option value="<?php echo $valor ?>"><?php echo $pais ?></option>
 						<?php endforeach; ?>

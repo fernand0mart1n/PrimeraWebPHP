@@ -5,16 +5,17 @@
 	$nombre = $_POST['nombre'];
 	$edad = $_POST['edad'];
 	$lugar = $_POST['lugar'];
+	$errores = [];
 
-	if(!isset($nombre) || !is_string($nombre)) {
+	if(empty($nombre) || !is_string($nombre)) {
 		array_push($errores, "Debe ingresar un nombre.");
 	}
 
-	if(!isset($edad) || !is_numeric($edad)) {
+	if(empty($edad) || !is_numeric($edad)) {
 		array_push($errores, "Debe ingresar su edad.");
 	}
 
-	if(!isset($lugar) || !is_string($lugar)) {
+	if(empty($lugar) || !is_string($lugar)) {
 		array_push($errores, "Debe seleccionar un país.");
 	}
 
@@ -24,7 +25,7 @@
 			array_unshift($errores, "Hay errores en todos los campos.");
 		}
 		
-		require __DIR__.'form.php';
+		require __DIR__.'/form.php';
 
 	} else {
 		$ok = "Sus datos se han enviado correctamente.";
