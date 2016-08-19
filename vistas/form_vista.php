@@ -38,10 +38,10 @@
 			</div>
 			<div class="form-group">
 				<div class="col-xs-5 col-xs-offset-4">
-					<a type="button" class="btn btn-primary" href="index.php">
+					<a type="button" class="btn btn-default" href="index.php">
 						<span class="glyphicon glyphicon-chevron-left"></span>Volver al inicio
 					</a>
-					<button type="submit" class="btn btn-success pull-right">
+					<button type="submit" class="btn btn-primary pull-right">
 						Enviar <span class="glyphicon glyphicon-send"></span>
 					</button>
 				</div>
