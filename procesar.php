@@ -1,18 +1,20 @@
 <?php
+	
+	$autorizado = true;
 
 	$nombre = $_POST['nombre'];
 	$edad = $_POST['edad'];
 	$lugar = $_POST['lugar'];
 
-	if(!is_string($nombre)) {
+	if(!isset($nombre) || !is_string($nombre)) {
 		array_push($errores, "Debe ingresar un nombre.");
 	}
 
-	if(!is_numeric($edad)) {
+	if(!isset($edad) || !is_numeric($edad)) {
 		array_push($errores, "Debe ingresar su edad.");
 	}
 
-	if(!is_string($lugar) || $lugar == "Seleccione un país") {
+	if(!isset($lugar) || !is_string($lugar)) {
 		array_push($errores, "Debe seleccionar un país.");
 	}
 
@@ -21,7 +23,7 @@
 		if(count($errores) == 3) {
 			array_unshift($errores, "Hay errores en todos los campos.");
 		}
-
+		
 		require __DIR__.'form.php';
 
 	} else {

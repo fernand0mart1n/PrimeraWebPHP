@@ -1,4 +1,8 @@
 <?php require __DIR__.'/header.php'; ?>
+<?php if(!isset($autorizado)): ?>
+	<h2>Usted no está autorizado a ingresar a este área.</h2>
+	<?php die(); ?>
+<?php endif; ?>
 	<!-- FORM: nombre, edad, lugar (select). procesar.php (validar), procesar_vista.php-->
 	<div class="col-xs-12">
 		<form class="form-horizontal responsive" method="POST" action="procesar.php">
@@ -34,7 +38,7 @@
 			</div>
 			<div class="form-group">
 				<div class="col-xs-5 col-xs-offset-4">
-					<a type="button" class="btn btn-danger" href="index.php">
+					<a type="button" class="btn btn-primary" href="index.php">
 						<span class="glyphicon glyphicon-chevron-left"></span>Volver al inicio
 					</a>
 					<button type="submit" class="btn btn-success pull-right">
