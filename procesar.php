@@ -1,6 +1,9 @@
 <?php
-	
-	$autorizado = true;
+
+	if (empty($_POST)) {
+		require "form.php";
+		die();
+	}
 
 	$nombre = $_POST['nombre'];
 	$edad = $_POST['edad'];
@@ -25,9 +28,9 @@
 			array_unshift($errores, "Hay errores en todos los campos.");
 		}
 		
-		require __DIR__.'/form.php';
-
-	} else {
-		$ok = "Sus datos se han enviado correctamente.";
-		require __DIR__.'/vistas/procesar_vista.php';
+	require __DIR__.'/form.php';
+	die();
 	}
+
+	$ok = "Sus datos se han enviado correctamente.";
+	require __DIR__.'/vistas/procesar_vista.php'; 

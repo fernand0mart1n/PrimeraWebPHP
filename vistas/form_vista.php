@@ -1,8 +1,4 @@
 <?php require __DIR__.'/header.php'; ?>
-<?php if(!isset($autorizado)): ?>
-	<h2>Usted no está autorizado a ingresar a este área.</h2>
-	<?php die(); ?>
-<?php endif; ?>
 	<!-- FORM: nombre, edad, lugar (select). procesar.php (validar), procesar_vista.php-->
 	<div class="col-xs-12">
 		<form class="form-horizontal responsive" method="POST" action="procesar.php">

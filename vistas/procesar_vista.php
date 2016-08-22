@@ -1,8 +1,4 @@
 <?php require __DIR__.'/header.php'; ?>
-<?php if(!isset($autorizado)): ?>
-	<h2>Usted no está autorizado a ingresar a este área.</h2>
-<?php die(); ?>
-<?php endif; ?>
 	<div class="col-xs-12">
 		<h3><?php echo $ok ?></h3>
 		<hr>
